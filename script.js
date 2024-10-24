@@ -17,8 +17,17 @@ navLink.forEach(link => {
 });
 
 /*~~~~~~~~~~~~~~~ STICKY HEADER ~~~~~~~~~~~~~~~*/
-
-
+const scrollHeader = () => {
+	const stickyMenu = document.getElementById('sticky-menu');
+	if(this.scrollY >= 150){
+		stickyMenu.classList.remove('lg:top-[-100%]');
+		stickyMenu.classList.add('bg-black/80');
+	} else{
+		stickyMenu.classList.add('lg:top-[-100%]');
+		stickyMenu.classList.remove('bg-black/80');
+	}
+}
+window.addEventListener('scroll', scrollHeader);
 /*~~~~~~~~~~~~~~~ SHOW SCROLL UP ~~~~~~~~~~~~~~~*/
 
 

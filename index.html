@@ -16,8 +16,8 @@
 			<!--~~~~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~~~~-->
 			<header id="navbar" class="text-black lg:text-white">
 				<nav class="max-w-[1920px]">
-					<!-- Mobile/Sticky Menu  -->
-					<div id="sticky-menu" class="fixed w-full top-0 left-0 z-50 lg:top-[-100%] duration-500">
+					<!-- mobile/sticky menu  -->
+					 <div id="sticky-menu" class="fixed w-full top-0 left-0 z-50 lg:top-[-100%] duration-500">
 						<div class="flex items-center justify-between h-20 px-5 md:px-10 lg:max-w-4xl lg:mx-auto">
 							<!-- empty div  -->
 							<div class="flex-1 lg:hidden"></div>
@@ -36,7 +36,6 @@
 								</div>
 
 								<ul class="flex flex-col items-start gap-5 lg:flex-row">
-							<div class="flex-1">
 									<li><a href="#home" class="nav-link active">Home</a></li>
 									<li><a href="#about" class="nav-link">About</a></li>
 									<li><a href="#fragrance" class="nav-link">Fragrance</a></li>
@@ -47,6 +46,7 @@
 								<!-- social icon  -->
 								<div class="flex items-center py-10 lg:hidden">
 									<p class="font-bold">Follow us <span class="ml-3 mr-5">-</span></p>
+
 									<ul class="nav__icons__mobile flex space-x-4">
 										<li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center">
 											<a href="#"><i class="ri-twitter-x-line"></i></a>
@@ -72,68 +72,83 @@
 								<i class="ri-menu-4-line"></i>
 							</div>
 						</div>
-					</div>
-
-					<!-- Desktop Menu  -->
-					 <div class="hidden lg:block py-4">
-						<div class="container flex items-center justify-center">
-							<!-- socila icon  -->
-							<div class="flex items-center">
-								<p class="font-bold">Follow us <span class="ml-3 mr-5">-</span></p>
-								<ul class="nav__icons flex space-x-4">
-									<li class="border-2 border-coffee h-8 w-8 rounded-full grid place-items-center">
-										<a href="#" class="text-coffee"><i class="ri-twitter-x-line"></i></a>
-									</li>
-									<li class="border-2 border-coffee h-8 w-8 rounded-full grid place-items-center">
-										<a href="#" class="text-coffee"><i class="ri-facebook-fill"></i></a>
-									</li>
-									<li class="border-2 border-coffee h-8 w-8 rounded-full grid place-items-center">
-										<a href="#" class="text-coffee"><i class="ri-instagram-line"></i></a>
-									</li>
-									<li class="border-2 border-coffee h-8 w-8 rounded-full grid place-items-center">
-										<a href="#" class="text-coffee"><i class="ri-youtube-fill"></i></a>
-									</li>
-								</ul>
-							</div>
-
-							<div class="flex-1">
-								<img src="img/logo.png" alt="" class="w-20 mx-auto">
-							</div>
-							<div class="flex-1 items-center justify-end">
-								<ul class="nav__icons flex space-x-8">
-									<li class="border-2 border-coffee h-8 w-8 rounded-full grid place-items-center">
-										<a href="#" class="text-coffee"><i class="ri-user-fill"></i></a>
-									</li>
-									<li class="border-2 border-coffee h-8 w-8 rounded-full grid place-items-center">
-										<a href="#" class="relative text-coffee"><i class="ri-shopping-bag-fill"></i>
-										<span class="font-bold absolute -top-2 -right-6 bg-white text-black text-xl w-6 h-6 rounded-full grid place-items-center">0</span>
-										</a>
-									</li>
-									<li class="border-2 border-coffee h-8 w-8 rounded-full grid place-items-center">
-										<a href="#" class="text-coffee"><i class="ri-search-line"></i></a>
-									</li>
-								</ul>
-							</div>
-						</div>
 					 </div>
 
-					 <div class="flex items-center justify-center mt-10">
-						<div class="flex justify-center gap-6">
-							<a href="#home" class="nav-link active hidden lg:block">Home</a>
-							<a href="#about" class="nav-link">About</a>
-							<a href="#fragrance" class="nav-link">Fragrance</a>
-							<a href="#quality" class="nav-link">Quality</a>
-							<a href="#products" class="nav-link">Products</a>
+					 <!-- desktop menu -->
+						<div class="hidden lg:block py-4">
+							<div class="container flex items-center justify-center">
+								<!-- social link  -->
+								<div class="flex flex-1 items-center py-10 ">
+									<p class="font-bold">Follow us <span class="ml-3 mr-5">-</span></p>
+
+									<ul class="nav__icons__mobile flex space-x-4">
+										<li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center">
+											<a href="#"><i class="ri-twitter-x-line"></i></a>
+										</li>
+										<li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center">
+											<a href="#"><i class="ri-facebook-fill"></i></a>
+										</li>
+										<li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center">
+											<a href="#"><i class="ri-instagram-line"></i></a>
+										</li>
+										<li class="border-2 border-black h-8 w-8 rounded-full grid place-items-center">
+											<a href="#"><i class="ri-youtube-fill"></i></a>
+										</li>
+									</ul>
+								</div>
+
+								<div class="flex-1">
+									<img src="img/logo.png" alt="" class="w-20 mx-auto">
+								</div>
+
+								<div class="flex flex-1 items-center justify-end">
+									<ul class="nav__icons flex space-x-8">
+										<li class="border-2 border-green-700 h-8 w-8 rounded-full grid place-items-center">
+											<a href="#" class="text-green-700"><i class="ri-user-fill"></i></a>
+										</li>
+										<li class="border-2 border-green-700 h-8 w-8 rounded-full grid place-items-center">
+											<a href="#" class="relative text-green-700"><i class="ri-shopping-bag-fill"></i>
+											<span class="font-bold absolute -top-2 -right-6 bg-white text-black text-xl w-6 h-6 rounded-full grid place-items-center">0</span>
+											</a>
+										</li>
+										<li class="border-2 border-green-700 h-8 w-8 rounded-full grid place-items-center">
+											<a href="#" class="text-green-700"><i class="ri-search-line"></i></a>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="flex items-center justify-center mt-10">
+								<div class="flex justify-center gap-6">
+									<a href="#home" class="nav-link active">Home</a>
+									<a href="#about" class="nav-link">About</a>
+									<a href="#fragrance" class="nav-link">Fragrance</a>
+									<a href="#quality" class="nav-link">Quality</a>
+									<a href="#products" class="nav-link">Products</a>
+								</div>
+							 </div>
 						</div>
-					 </div>
 				</nav>
 			</header>
 
 			<main>
 					<!--~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~-->
-					<div id="home">
+					<!-- <div id="home">
+						<div>
+							<div>
+								<h1>Organic</h1>
+								<h1>Colombian Coffee</h1>
+								<p>Experience the rich essence of Colombia with a coffee crafted to perfection. Smooth and bold, each sip delivers a unique blend of flavor and aroma that awakens your senses.</p>
+							</div>
+						</div>
 
-					</div>
+						<div>
+							<div>
+								<img src="img/coffee-bean.png" alt="">
+							</div>
+						</div>
+					</div> -->
 					
 					<!--~~~~~~~~~~~~~~~ ABOUT ~~~~~~~~~~~~~~~-->
 					<section id="about">
